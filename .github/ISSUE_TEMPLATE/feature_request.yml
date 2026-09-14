@@ -1,0 +1,23 @@
+name: Feature request
+description: Suggest a new filter, workflow or quality-of-life improvement
+title: "[FEATURE] "
+labels: []
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem or workflow would this improve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed feature
+      description: Describe how you think the feature should work.
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples or additional context
+      description: Add screenshots, examples or related ideas if useful.
