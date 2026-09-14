@@ -1,0 +1,50 @@
+name: Incorrect result / classification
+description: Report an APF result that disagrees with a reproducible in-game observation
+title: "[RESULT] "
+labels: []
+body:
+  - type: input
+    id: version
+    attributes:
+      label: APF version
+      placeholder: "1.2.3"
+    validations:
+      required: true
+  - type: input
+    id: portal
+    attributes:
+      label: Portal address
+      placeholder: "12 hexadecimal digits"
+    validations:
+      required: true
+  - type: input
+    id: galaxy
+    attributes:
+      label: Galaxy
+      placeholder: "Euclid"
+    validations:
+      required: true
+  - type: textarea
+    id: filters
+    attributes:
+      label: Search scope and relevant filters
+      description: Include only the filters needed to reproduce the result.
+    validations:
+      required: true
+  - type: textarea
+    id: apf_result
+    attributes:
+      label: APF result
+    validations:
+      required: true
+  - type: textarea
+    id: game_result
+    attributes:
+      label: Observed in-game result
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots / additional evidence
+      description: Add screenshots or other non-sensitive evidence where possible.
